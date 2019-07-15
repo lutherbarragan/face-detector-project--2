@@ -7,10 +7,10 @@ import './Demographics.css';
 
 const Demographics = () => {
     return (
-        <div>
-            <h1 className="home__heading text-light bg-dark py-4 shadow">DEMOGRAPHICS</h1>
+        <div className="demographics">
+            <h1 className="demographics__heading text-light bg-dark py-4 shadow">DEMOGRAPHICS</h1>
             <Link to="/">
-                <Button>HOME</Button>
+                <Button className="demographics__back-btn">HOME</Button>
             </Link>
         </div>
     )
