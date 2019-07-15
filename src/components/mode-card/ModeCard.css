@@ -1,0 +1,8 @@
+.ModeCard {
+    max-width: 24rem;
+    transition: all .3s;
+}
+
+.ModeCard:hover {
+    transform: scale(1.08);
+}

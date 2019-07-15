@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ModeCard from './components/mode-card/ModeCard'
+
+const App = () => {
+    return (
+            <main className="main App">
+                <h1 className="main__heading text-light bg-dark py-4 shadow">CHOOSE A RECOGNITION MODE</h1>
+
+                <div className="main__modes pt-5 px-5">
+
+                    <ModeCard CardTitle="Demographics" CardText="Predict the age, gender, and cultural appearance of detected faces" CardImage="img/demographics.jpg" />
+                    <ModeCard CardTitle="Colors" CardText="Identify the dominant colors present in your photo in hex form" CardImage="img/colors.jpg" />
+
+                </div>      
+
+            </main>
+    );
 }
 
 export default App;
