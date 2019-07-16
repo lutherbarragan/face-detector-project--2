@@ -43,8 +43,6 @@ class Colors extends Component {
                 this.setState( {resultColors: res.outputs[0].data.colors} )
             })
             .catch(err => console.log(err))
-    
-        
     }
 
 
