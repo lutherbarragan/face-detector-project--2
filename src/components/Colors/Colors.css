@@ -1,3 +1,16 @@
-.ColorResultSection {
-    width: 100%;
+.colors__input {
+    max-width: 700px;
+}
+
+.colors__result-container {
+    overflow: hidden;
+}
+
+.colors__color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #000000;
+    color: #ffffff;
 }
