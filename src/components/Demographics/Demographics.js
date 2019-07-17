@@ -38,6 +38,7 @@ class Demographics extends Component {
         
         let age = [...data.data.face.age_appearance.concepts]
         
+        
         age = age.splice(0, 5).map(c => {
             return { name: c.name, value: Math.round(c.value * 100) }
         })
@@ -68,6 +69,7 @@ class Demographics extends Component {
 
     submitInputValue = e => {
         e.preventDefault()
+        this.setState( {activeBox: {}} )
         this.setState( {submitValue: this.state.inputValue} )
 
         clarifaiApp.models.predict("c0c0ac362b03416da06ab3fa36fb58e3", this.state.inputValue)
