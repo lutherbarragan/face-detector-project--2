@@ -6,6 +6,11 @@
     overflow: hidden;
 }
 
+.demographics__image-box {
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .demographics__face-box {
     border: 2px solid;
     position: absolute;
@@ -15,4 +20,17 @@
 .demographics__face-box:hover  {
     border: 2px solid red !important;
     cursor: pointer;
+}
+
+.demographics__accordion-heading:hover {
+    background-color: #4d80ee !important;
+    cursor: pointer;
+}
+
+.even {
+    background-color: #4d80ee;
+}
+
+.odd {
+    background-color: #759df5;
 }
