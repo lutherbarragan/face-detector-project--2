@@ -1,3 +1,7 @@
+.colors {
+    
+}
+
 .colors__input {
     max-width: 700px;
 }
@@ -13,4 +17,11 @@
     font-weight: 800;
     -webkit-text-stroke: 1px #000000;
     color: #ffffff;
+}
+
+
+@media (max-width: 576px ) {
+    .colors__heading {
+        font-size: 24px;
+    }
 }
