@@ -34,3 +34,7 @@
 .odd {
     background-color: #759df5;
 }
+
+div.active {
+    border: 2px solid red !important;
+}

@@ -36,8 +36,9 @@ class Demographics extends Component {
         const id = e.target.id
         const data = this.state.resultData.find(el => el.id === id);
         
+        let age = [...data.data.face.age_appearance.concepts]
         
-        const age = data.data.face.age_appearance.concepts.splice(0, 5).map(c => {
+        age = age.splice(0, 5).map(c => {
             return { name: c.name, value: Math.round(c.value * 100) }
         })
 
@@ -52,6 +53,12 @@ class Demographics extends Component {
         const activeBox = {age, gender, multicultural}
            
         this.setState( {activeBox: activeBox} )
+
+        window.document.querySelectorAll('.demographics__face-box').forEach(box => {
+            box.classList.remove('active')
+        })
+        e.target.classList.add("active")
+
     }
 
     getInputValue = e => {
